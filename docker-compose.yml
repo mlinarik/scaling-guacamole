@@ -14,3 +14,16 @@ services:
     # optional: map ports only if you need them
     # ports:
     #   - "8080:8080"
+
+  web-ui:
+    build:
+      context: ./web-ui
+      dockerfile: Dockerfile
+    image: scaling-guacamole-web-ui:latest
+    container_name: scaling-guacamole-web-ui
+    ports:
+      - "3000:3000"
+    environment:
+      - TZ=UTC
+    volumes:
+      - ./web-ui/tools.json:/app/tools.json:ro

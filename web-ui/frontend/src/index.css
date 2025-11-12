@@ -1,0 +1,11 @@
+:root{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{margin:0;background:#0f1724;color:#e6eef8}
+.app{padding:20px;max-width:900px;margin:0 auto}
+header h1{margin:0 0 12px 0;font-size:20px}
+.controls{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+label{display:flex;flex-direction:column;font-size:12px}
+select,input{padding:8px;border-radius:6px;border:1px solid #23303b;background:#071120;color:inherit}
+button{padding:8px 12px;border-radius:6px;background:#06b6d4;color:#042027;border:none}
+.output pre{background:#06121a;padding:12px;border-radius:6px;overflow:auto;height:300px}
+.err{color:#ffb4b4}
+.exit{color:#9be6b4}

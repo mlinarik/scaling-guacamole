@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "name": "list_data",
+      "cmd": "ls",
+      "args": ["-la", "/home/recon/data"]
+    },
+    {
+      "name": "echo",
+      "cmd": "echo",
+      "args": ["Hello from scaling-guacamole!"]
+    }
+  ]
+}

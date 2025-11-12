@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  recon:
+    build: .
+    image: kali-recon:latest
+    container_name: kali-recon
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./data:/home/recon/data
+    environment:
+      - TZ=UTC
+    # optional: map ports only if you need them
+    # ports:
+    #   - "8080:8080"
